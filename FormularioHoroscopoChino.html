@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Horóscopo chino</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type=text] {
+        padding: 10px;
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      button[type=submit] {
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .resultado {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .animal {
+        font-weight: bold;
+        color: #4CAF50;
+        margin-bottom: 10px;
+      }
+
+      .imagen-animal {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px;
+        max-height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Horóscopo chino</h1>
+    <form method="POST" action="HoroscopoChino.php">
+      <label for="anio">Introduce el año de nacimiento:</label>
+      <input type="text" name="anio" id="anio">
+      <br><br>
+      <button type="submit">Mostrar</button>
+    </form>
+  </body>
+</html>
